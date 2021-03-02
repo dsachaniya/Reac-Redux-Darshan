@@ -4,7 +4,7 @@ React - Redux Darshan which contains `react-router-dom`, `redux`, `jest`, `enzym
 
 ## Clone the Repo
 
-`Git clone https://github.com/dsachaniya/React-Redux-Darshan.git`
+`Git clone https://github.com/dsachaniya/Reac-Redux-Darshan.git`
 
 ## Run Project
 
