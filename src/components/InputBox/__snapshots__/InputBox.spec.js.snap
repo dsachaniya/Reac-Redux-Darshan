@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputBox /> Rendering 1`] = `
+<section>
+  <WithStyles(ForwardRef(TextField))
+    autoFocus={false}
+    error={false}
+    fullWidth={true}
+    helperText=""
+    margin="normal"
+    required={true}
+    variant="outlined"
+  />
+</section>
+`;

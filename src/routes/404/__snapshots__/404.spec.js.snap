@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RouteNotFound /> Rendering 1`] = `
+<section>
+  <h1>
+    Oops...! 404 Route Not Found
+  </h1>
+</section>
+`;

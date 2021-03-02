@@ -1,0 +1,170 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended",
+    "plugin:css-modules/recommended",
+    "prettier",
+    "prettier/flowtype",
+    "prettier/react",
+    "plugin:react/recommended"
+  ],
+  "plugins": ["flowtype", "prettier", "css-modules", "require-jsdoc-except"],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "rules": {
+    // Ensure <a> tags are valid
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md
+    "jsx-a11y/anchor-is-valid": [ "error", {
+      "components": [ "Link" ],
+      "specialLink": [ "to" ]
+    }],
+    // Forbid the use of extraneous packages
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "packageDir": "."
+      }
+    ],
+    // Recommend not to leave any console.log in your code
+    // Use console.error, console.warn and console.info instead
+    // https://eslint.org/docs/rules/no-console
+    "no-console": [
+      "error",
+      {
+        "allow": ["log", "warn", "error", "info"]
+      }
+    ],
+    // Prefer destructuring from arrays and objects
+    // http://eslint.org/docs/rules/prefer-destructuring
+    "prefer-destructuring": [
+      "error",
+      {
+        "VariableDeclarator": {
+          "array": false,
+          "object": true
+        },
+        "AssignmentExpression": {
+          "array": false,
+          "object": false
+        }
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ],
+    "jsx-a11y/label-has-for": [
+      2,
+      {
+        "components": ["Label"],
+        "required": {
+          "some": ["nesting", "id"]
+        },
+        "allowChildren": false
+      }
+    ],
+    "jsx-a11y/click-events-have-key-events": ["warn"],
+    // Allow .js files to use JSX syntax
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    // Functional and class components are equivalent from React’s point of view
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md
+    "react/prefer-stateless-function": "off",
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/destructuring-assignment.md
+    "react/destructuring-assignment": "off",
+    // ESLint plugin for prettier formatting
+    // https://github.com/prettier/eslint-plugin-prettier
+    "prettier/prettier": [
+      "error",
+      {
+        // https://github.com/prettier/prettier#options
+        "singleQuote": true,
+        "trailingComma": "all"
+      }
+    ],
+    "require-jsdoc-except/require-jsdoc": [
+      "error",
+      {
+        "require": {
+          "FunctionDeclaration": true,
+          "MethodDefinition": true,
+          "ClassDeclaration": false,
+          "ArrowFunctionExpression": false,
+          "FunctionExpression": false
+        },
+        "ignore": [
+          // https://reactjs.org/docs/react-component.html
+          "componentDidCatch",
+          "componentDidMount",
+          "componentDidUpdate",
+          "componentWillMount",
+          "componentWillReceiveProps",
+          "componentWillReceiveProps",
+          "componentWillUnmount",
+          "componentWillUpdate",
+          "constructor",
+          "getDerivedStateFromProps",
+          "getDerivedStateFromProps",
+          "getSnapshotBeforeUpdate",
+          "render",
+          "render",
+          "shouldComponentUpdate",
+          "UNSAFE_componentWillMount",
+          "UNSAFE_componentWillReceiveProps",
+          "UNSAFE_componentWillReceiveProps",
+          "UNSAFE_componentWillUpdate",
+          // redux typical connectors
+          "mapStateToProps",
+          "mapDispatchToProps"
+        ]
+      }
+    ],
+    "valid-jsdoc": [
+      "error",
+      {
+        // matchDescription: ".+",
+        "prefer": {
+          "arg": "param",
+          "argument": "param",
+          "class": "constructor",
+          "return": "returns",
+          "virtual": "abstract"
+        },
+        "preferType": {
+          "Boolean": "boolean",
+          "Number": "number",
+          "object": "Object",
+          "String": "string"
+        },
+        "requireParamDescription": false,
+        "requireReturn": true,
+        "requireReturnDescription": false,
+        "requireReturnType": true
+      }
+    ],
+    "no-unused-vars": [
+      "error",
+      {
+        "args": "none",
+        "caughtErrors": "none"
+      }
+    ],
+    "class-methods-use-this": "off",
+    "react/jsx-props-no-spreading": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "src"]
+      }
+    }
+  }
+}

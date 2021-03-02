@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RouteAuthentication /> Authenticated Route 1`] = `
+<div>
+  TEST
+</div>
+`;
+
+exports[`<RouteAuthentication /> UnAuthenticated Route 1`] = `
+<Redirect
+  to={
+    Object {
+      "pathname": "/login",
+      "state": Object {
+        "from": undefined,
+      },
+    }
+  }
+/>
+`;
+
+exports[`<RouteAuthentication /> rendering 1`] = `
+<Route
+  exact={true}
+  path="/test"
+  render={[Function]}
+/>
+`;

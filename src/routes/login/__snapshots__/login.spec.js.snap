@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Login /> Rendering 1`] = `
+<section>
+  <WithStyles(ForwardRef(Container))
+    component="main"
+    maxWidth="xs"
+  >
+    <h1>
+      Login Page
+    </h1>
+    <InputBox
+      autoFocus={false}
+      helperText=""
+      id="username_input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      type="Username"
+    />
+    <InputBox
+      autoFocus={false}
+      helperText=""
+      id="password_input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      type="Password"
+    />
+    <WithStyles(ForwardRef(Button))
+      className="makeStyles-submit-1"
+      color="primary"
+      disabled={false}
+      fullWidth={true}
+      onClick={[Function]}
+      variant="contained"
+    >
+      Login
+    </WithStyles(ForwardRef(Button))>
+  </WithStyles(ForwardRef(Container))>
+  <WithStyles(ForwardRef(Backdrop))
+    className="makeStyles-backdrop-2"
+  >
+    <WithStyles(ForwardRef(CircularProgress))
+      color="inherit"
+    />
+  </WithStyles(ForwardRef(Backdrop))>
+</section>
+`;

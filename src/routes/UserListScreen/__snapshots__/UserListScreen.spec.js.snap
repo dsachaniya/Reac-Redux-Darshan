@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UserListScreen /> Rendering 1`] = `
+<section>
+  <WithStyles(ForwardRef(Grid))
+    container={true}
+    spacing={3}
+  >
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      xs={6}
+    >
+      <Styled(MuiBox)
+        display="flex"
+        flexDirection="column"
+      >
+        <h3>
+          My Customers
+        </h3>
+        <WithStyles(ForwardRef(TextField))
+          id="outlined-basic"
+          label="Search for names, username, email, phone..."
+          onChange={[Function]}
+          variant="outlined"
+        />
+      </Styled(MuiBox)>
+    </WithStyles(ForwardRef(Grid))>
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))
+    alignItems="center"
+    container={true}
+    direction="row"
+    justify="flex-end"
+  >
+    <Styled(MuiBox)>
+      <WithStyles(ForwardRef(Button))
+        color="primary"
+        onClick={[Function]}
+        variant="contained"
+      >
+        Add user
+      </WithStyles(ForwardRef(Button))>
+    </Styled(MuiBox)>
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Table))
+    aria-label="simple table"
+  >
+    <WithStyles(ForwardRef(TableHead))>
+      <WithStyles(ForwardRef(TableRow))>
+        <WithStyles(ForwardRef(TableCell))>
+          Name
+        </WithStyles(ForwardRef(TableCell))>
+        <WithStyles(ForwardRef(TableCell))
+          align="right"
+        >
+          Username
+        </WithStyles(ForwardRef(TableCell))>
+        <WithStyles(ForwardRef(TableCell))
+          align="right"
+        >
+          Email
+        </WithStyles(ForwardRef(TableCell))>
+        <WithStyles(ForwardRef(TableCell))
+          align="right"
+        >
+          Phone
+        </WithStyles(ForwardRef(TableCell))>
+        <WithStyles(ForwardRef(TableCell))
+          align="right"
+        >
+          created Date
+        </WithStyles(ForwardRef(TableCell))>
+        <WithStyles(ForwardRef(TableCell))
+          align="right"
+        >
+          Action
+        </WithStyles(ForwardRef(TableCell))>
+      </WithStyles(ForwardRef(TableRow))>
+    </WithStyles(ForwardRef(TableHead))>
+    <WithStyles(ForwardRef(TableBody))>
+      <WithStyles(ForwardRef(TableRow))>
+        <WithStyles(ForwardRef(TableCell))
+          component="th"
+          scope="row"
+        >
+          undefined undefined
+        </WithStyles(ForwardRef(TableCell))>
+        <WithStyles(ForwardRef(TableCell))
+          align="right"
+        >
+          user undefined
+        </WithStyles(ForwardRef(TableCell))>
+        <WithStyles(ForwardRef(TableCell))
+          align="right"
+        />
+        <WithStyles(ForwardRef(TableCell))
+          align="right"
+        >
+          012345678
+        </WithStyles(ForwardRef(TableCell))>
+        <WithStyles(ForwardRef(TableCell))
+          align="right"
+        >
+          09-22-2020
+        </WithStyles(ForwardRef(TableCell))>
+        <WithStyles(ForwardRef(TableCell))
+          align="right"
+        >
+          <WithStyles(ForwardRef(Button))
+            color="primary"
+            onClick={[Function]}
+          >
+            Edit
+          </WithStyles(ForwardRef(Button))>
+          <WithStyles(ForwardRef(Button))
+            color="secondary"
+            onClick={[Function]}
+          >
+            Delete
+          </WithStyles(ForwardRef(Button))>
+        </WithStyles(ForwardRef(TableCell))>
+      </WithStyles(ForwardRef(TableRow))>
+    </WithStyles(ForwardRef(TableBody))>
+  </WithStyles(ForwardRef(Table))>
+</section>
+`;

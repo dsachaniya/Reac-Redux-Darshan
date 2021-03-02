@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ReactHelment /> Rendering 1`] = `
+<Fragment>
+  <Helmet
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      Test - React - Redux Darshans
+    </title>
+    <meta
+      content="Test to be protected."
+      name="description"
+    />
+  </Helmet>
+  <TestComponent />
+</Fragment>
+`;
